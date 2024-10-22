@@ -113,3 +113,38 @@ h1 {
     font-size: 1.5em; /* Размер иконки */
     color: #028090; 
 }
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column; /* Одна карточка в ряд на узких экранах */
+    }
+
+    .skill-card {
+        flex: 1 1 100%;
+    }
+
+    .skill-icon {
+        font-size: 30px; /* Уменьшаем размер иконок на мобильных */
+    }
+
+    .skill-card h3 {
+        font-size: 20px; /* Уменьшаем размер заголовков на мобильных */
+    }
+
+    .skill-card p {
+        font-size: 14px; /* Уменьшаем размер текста на мобильных */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-icon {
+        font-size: 15px; /* Еще меньше для очень узких экранов */
+    }
+
+    .skill-card h3 {
+        font-size: 15px;
+    }
+
+    .skill-card p {
+        font-size: 12px;
+    }
+}
